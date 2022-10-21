@@ -1,0 +1,265 @@
+
+
+@font-face{ 
+	font-family:'montserrat-extralight';
+	src: url('montserrat/montserrat-extralight.eot') format('eot'),
+	     url('montserrat/montserrat-extralight.woff') format('woff'),
+	     url('montserrat/montserrat-extralight.ttf') format('truetype'),
+	     url('montserrat/montserrat-extralight.svg') format('svg');
+}
+
+
+@font-face{ 
+	font-family:'opensans-light';
+	src: url('opensans/opensans-light-webfont.eot') format('eot'),
+	     url('opensans/opensans-light-webfont.woff') format('woff'),
+	     url('opensans/opensans-light-webfont.truetype') format('truetype'),
+	     url('opensans/opensans-light-webfont.svg') format('svg');
+}
+
+
+body
+{
+  
+    font-family: "opensans-light",serif,"montserrat-extralight", sans-serif;
+
+
+ 
+}
+
+/* On travaille sur la balise body, donc sur TOUTE la page */
+
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+   font-family: "opensans-light",sans-serif,"montserrat-extralight", serif;
+  
+}
+
+aside
+{
+	text-align: justify;
+
+	width: 50%;
+
+	margin : auto ;
+
+}
+
+/* On travaille sur l'entete */
+
+header,.name
+{
+
+	display: flex;
+	justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 0 0 10px;
+    
+}
+
+
+nav ul
+
+{
+
+    list-style-type: none ;
+
+    display: flex;
+ 
+}
+
+nav li
+
+{
+   
+	margin-left: 25px;
+	color: white;
+}
+
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+/* Adaptation menu de navigation à différents écrans */
+
+@media all and (max-width: 1024px)
+
+
+{
+	header,.name
+	{
+
+		display: flex;
+		flex-direction: column-reverse;
+	    margin: 0 0 0 10px;
+	    justify-content: center;
+	    align-items: center;
+	}
+
+
+
+	#banniere #canva_lien
+	{
+
+		display: none;
+	}
+
+
+    nav
+    {
+        width: auto;
+        text-align: left;
+    }
+    
+    nav ul
+    {
+        flex-direction: column;
+    }
+
+    nav li
+    {
+        padding-righ: 4px;
+    }
+    
+    nav a
+    {
+        font-size: 1.1em;
+    }
+    
+    nav li #home_btn
+    {
+        font-size: 1.1em;
+        background-color: lightblue;
+        background-size: 100%;
+
+    }
+    
+
+
+    nav a:hover
+    {
+        border-bottom: 0;
+    }
+
+nav a:hover
+    {
+        border-bottom: 0;
+    }
+
+}
+
+
+
+/* On travaille sur le corps */
+
+#presentation section
+
+{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+}
+
+article, aside
+
+{ 
+  
+    font-size: 20px;
+    
+    text-align: justify;
+}
+
+.Summary
+
+{
+
+  border-bottom: 1.2px solid;	
+
+}
+
+.introduction
+{
+
+ line-height: 2em ;
+
+}
+
+#sorbonne 
+{
+  
+
+  color: blueviolet;
+  padding-bottom: 3px;
+  text-decoration: none;
+
+}
+
+#sorbonne:hover 
+{
+  
+  border-bottom: 1.2px solid blueviolet;
+
+}
+
+#limoges
+
+{
+	color: blueviolet;
+  padding-bottom: 3px;
+  text-decoration: none;
+
+
+}
+
+#limoges:hover
+{
+
+	border-bottom: 1.2px solid blueviolet;
+}
+
+/* Media queries */
+
+@media all and (max-width: 1024px)
+{
+    #presentation section
+    {
+        flex-direction: column;
+    }
+
+    article, aside
+    {
+        width: auto;
+        margin-bottom: 15px;
+    }
+
+    #banniere
+    {
+
+    	display: none;
+    }
+   
+}
+
+/** Sur les écrans, quand la largeur de la fenetre  fait au maximum 1280px **/
+
+/**@media screen and (max-width : 1280px)
+
+
+/** Sur les écrans, quand la largeur de la fenetre  fait au maximum 1280px **/
+
+/**@media all and (min-width : 1024px) and (max-width : 1280px)
+
+
+
+
+
+
